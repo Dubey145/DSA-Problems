@@ -8,8 +8,8 @@ int addDigitByDigit(int a,int b,int c){
   	int carry = 0,dig_sum = 0,i=0;
     int number=0;
 
-  	while(dig1>0&&dig2>0&&dig3>0)
-    { cout<< i;
+  	while((a>0) || (b>0) || (c>0))
+    { 
       dig1 = a%10;
       dig2 = b%10;
       dig3 = c%10;
@@ -23,11 +23,15 @@ int addDigitByDigit(int a,int b,int c){
       b /= 10;
       c /= 10;
     }
-  
+    //cout<<i<<endl;
   for(int k =0;k<i;k++)
-  {
-    number = number + array[k] + pow(10,k);
-  }
+    {
+        cout<<array[k]<<endl;
+    }
+  for(int k =0;k<i;k++)
+    {
+        number = number + array[k] + pow(10,k);
+    }
   return number;
 }
 
