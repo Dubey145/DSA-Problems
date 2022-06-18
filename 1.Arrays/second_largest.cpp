@@ -1,6 +1,6 @@
-#include <iostream>
+#include<iostream>
+#include<climits>
 using namespace std;
-
 /*
 to find the 2nd largest element in the array
 eg 2 6 1 9 8 5 7
@@ -10,7 +10,9 @@ output - 8
 
 int second_largest(int array[], int size)
     {
-        int max1 = array[0], max2 = array[1];
+        int largest = INT_MIN;
+        int second = INT_MIN;
+
         for(int i=0; i<size; i++)
             {
                 if(array[i] > max1)
@@ -28,11 +30,13 @@ int second_largest(int array[], int size)
 
 int main ()
     {
-        int array[7];
-        for (int i = 0; i < 7; i++)
+        int size;
+        cin>>size;
+        int *array = new int[size];
+        for (int i = 0; i < size; i++)
             {
                 cin>>array[i];
             }
-        cout<<second_largest(array,7);
+        cout<<second_largest(array,size);
         return 0;
     }
