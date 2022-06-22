@@ -16,11 +16,16 @@ void rotate(int array[], int r,int size)
                     }
                 array[i-1] = swapper;
             }
-        for(int i = 0;i < size;i++)
+  		
+        for(int k = 0;k < size;k++)
             {
-                cout<<array[i]<<" ";
+          		if(k == size-1)
+                  	cout<<array[k]<<endl;
+          		else 
+                  cout<<array[k]<<" ";
             }
     }
+
 
 int main()
     {
