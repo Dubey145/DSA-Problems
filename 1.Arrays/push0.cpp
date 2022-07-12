@@ -5,6 +5,7 @@ using namespace std;
 eg input array = 2 6 0 0 1 9 0 8 0
 output = 2 6 1 9 8 0 0 0 0 
 */
+
 int main()
     {
         int array[9];
