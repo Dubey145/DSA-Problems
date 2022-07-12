@@ -1,9 +1,12 @@
 #include<iostream>
 using namespace std;
 
-/* push all 0 to the end 
+/* 
+
+push all 0 to the end 
 eg input array = 2 6 0 0 1 9 0 8 0
 output = 2 6 1 9 8 0 0 0 0 
+
 */
 
 int main()
