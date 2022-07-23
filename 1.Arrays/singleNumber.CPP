@@ -32,12 +32,11 @@ int betterSingle(vector<int>& nums)
         //using xor we can get the complexity to 1
         //because same number ^ same number = 0
         // it is commutative eg 5^1^3^1 = 5^3 = 6
-        int result;
-        for(int i = 0; i <nums.length()-1;i++)
+        for(int i = 0; i <nums.size()-1;i++)
             {
                 nums[i+1] = nums[i] ^ nums[i+1];
             }
-        return nums[nums.length()-1];
+        return nums[nums.size()-1];
     }
 
 
