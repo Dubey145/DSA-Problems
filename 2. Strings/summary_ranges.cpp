@@ -7,7 +7,6 @@ using namespace std;
 vector<string> summaryRanges(vector<int>& nums) 
     {
         vector<string> ranges;
-        string s;//to store "a->b"
 
         int starting_number;
 
@@ -31,7 +30,15 @@ vector<string> summaryRanges(vector<int>& nums)
         return ranges;
 
     }
+/*
 
+notes
+str.push_back is only used to push a single char
+to_string() will convert whatever passed to a string so extra variables are not required
+
+do not forget to check out of range condition i+1<size
+
+*/
 
 int main()
     {
