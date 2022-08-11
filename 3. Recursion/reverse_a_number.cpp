@@ -1,4 +1,5 @@
 //1234-->4321
+//reverse digits in a string
 #include<iostream>
 using namespace std;
 
