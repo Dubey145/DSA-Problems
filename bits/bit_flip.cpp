@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/minimum-bit-flips-to-convert-number/
+//bit magic
 
 #include<iostream>
 using namespace std;
