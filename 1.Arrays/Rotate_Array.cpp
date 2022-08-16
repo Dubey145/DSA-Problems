@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 /* 
 perforn array rotation 
 eg 2 6 3 1 5 9 8 - input
