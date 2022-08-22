@@ -20,7 +20,7 @@ int count_set_bits(int number)
             suppose we use n bits to store the number and if the MSB is set then this approach will take O(n)
         */
     }
-//braian kerningams algorithm 
+//brian kerningams algorithm 
 //when you subtract 1 from a number the bits after the last set bits are changed to 1
 //for every iteration lets turn of one of the set bits
 
