@@ -1,42 +1,57 @@
+// problem link : second largest element in an array 
 #include<iostream>
-#include<climits>
+#include<vector>
+#include<algorithm>
 using namespace std;
-/*
-to find the 2nd largest element in the array
-eg 2 6 1 9 8 5 7
-output - 8
 
-*/
-
-long int second_largest(long int array[], long int size)
+int second(vector<int> &nums)
     {
-        long int max = -1001;
-        long int second_max = -1001;
-
-        for(long int i=0; i<size; i++)
+        int max1 = INT_MIN;
+        int max2 = INT_MIN;
+        for(int i = 0 ; i <nums.size() ;i++)
             {
-                if(array[i] > max)
-                    {
-                        second_max = max;
-                        max = array[i];
-                    }
-                else if (array[i] < max && array[i] > second_max)
-                    {
-                        second_max = array[i];
+                if(nums[i]>max1)
+                    {                                                    
+                        max1 = nums[i];
                     }
             }
-        return second_max;
+        for(int i = 0 ; i < nums.size();i++)
+            {
+                if(nums[i]>max2 && nums[i]!= max1)
+                    {                                                    
+                        max2 = nums[i];
+                    }
+            }
+        return max2;
     }
 
-int main ()
+//in one pass
+
+int better_second(vector<int> &nums)
     {
-        int size;
-        cin>>size;
-        long int *array = new long int[size];
-        for (int i = 0; i < size; i++)
+        if(nums.size()<2) return -1;
+        int max1 = INT_MIN;
+        int max2 = INT_MIN;
+        for(int i = 0 ; i<nums.size() ; i++)        
             {
-                cin>>array[i];
+                if(nums[i]>=max1)
+                    {
+                        max2 = max1;
+                        max1 = nums[i];
+                    }
+                else
+                    if(nums[i]>max2)
+                        max2 = nums[i];
+                //nums[i]<max1 &&
             }
-        cout<<second_largest(array,size);
+        if(max2 == max1) return -1; // no second largest;
+        
+        return max2;
+    }
+
+int main()
+    {
+        vector<int> nums{24,80,70,150};
+        cout<<better_second(nums);
         return 0;
     }
