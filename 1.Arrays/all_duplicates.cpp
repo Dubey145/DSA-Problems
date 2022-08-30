@@ -28,7 +28,6 @@ vector<int> findDuplicates(vector<int>& nums)
             }
         return duplicates;
     }
-
 int main() 
     {
         vector<int> nums;
