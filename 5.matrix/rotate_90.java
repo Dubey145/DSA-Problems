@@ -29,7 +29,7 @@ public class rotate_90 {
                 nums[i][j] = nums[nums.length-i-1][j];
                 nums[nums.length-i-1][j] =  temp;            
             }
-        }
+        } 
 
         return nums;
 
