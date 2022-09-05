@@ -1,4 +1,4 @@
-// problem link : boundary traversal - print the boundary elements of the matrix
+// problem link : boundary traversal - print the boundary elements of the matrix -- TC = O(r+c)
 #include<iostream>
 #include<vector>
 #include<algorithm>
