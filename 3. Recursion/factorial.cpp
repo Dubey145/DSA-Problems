@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 int factorial(int number)
     {
         if(number == 0) 
