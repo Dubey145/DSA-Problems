@@ -4,7 +4,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
 bool lemonadeChange(vector<int>& bills) 
     {
         int fives = 0;
