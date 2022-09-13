@@ -5,10 +5,6 @@
 #include<unordered_Set>
 using namespace std;
 
-bool sub0(vector<int>&nums)
-    {
-        //unordered_map<>
-    }
 bool sub0_brute(vector<int> &nums)
     {
         for(int i = 0; i < nums.size(); i++)
