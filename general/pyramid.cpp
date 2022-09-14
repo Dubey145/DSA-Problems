@@ -13,5 +13,5 @@ int main()
       	cout<<k;
     cout<<endl;
   }
-  return 0;
+ return 0;
 }
