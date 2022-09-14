@@ -3,7 +3,6 @@ using namespace std;
 
 void fib(int n)
     {
-        
         if(n == 0)
             {    cout<<"0";
                  return;
