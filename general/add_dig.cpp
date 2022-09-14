@@ -7,7 +7,6 @@ int addDigitByDigit(int a,int b,int c){
 	int dig1,dig2,dig3;
   	int carry = 0,dig_sum = 0,i=0;
     int number=0;
-
   	while((a>0) || (b>0) || (c>0))
     { 
       dig1 = a%10;
