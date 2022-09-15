@@ -3,7 +3,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
 int xorOperation(int n, int start) 
     {
         vector<int> xOr;
