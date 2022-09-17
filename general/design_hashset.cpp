@@ -3,7 +3,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
 class MyHashSet {
     vector<int> keys;
     vector<int> values;
