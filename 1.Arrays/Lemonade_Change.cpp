@@ -21,10 +21,7 @@ bool lemonadeChange(vector<int>& bills)
                         tens++;
                     }
                 else
-                    {
-                        //20
-                        //either give one tens and one fives 
-                        //or 3 fives
+                {
                         twenties++;
                         if(tens>=1 && fives>=1)
                             {
