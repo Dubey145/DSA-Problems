@@ -6,7 +6,6 @@ eg 2 6 3 1 5 9 8 - input
 d =2  
 1st rotation - 6 3 1 5 9 8 2
 2nd rotation - 3 1 5 9 8 2 6 - answer
-
 */
 void rotate(int array[], int size,int rotations)
     {
