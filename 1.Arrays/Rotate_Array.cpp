@@ -19,6 +19,7 @@ void rotate(int array[], int size,int rotations)
                 array[size-1] = start;
             }
     }
+
 int main()
     {
         int array[7];
