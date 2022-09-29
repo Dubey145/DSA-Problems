@@ -1,5 +1,5 @@
 // problem link : https://leetcode.com/problems/lemonade-change/
-//lemony
+//lemony lemonade 
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -40,6 +40,7 @@ bool lemonadeChange(vector<int>& bills)
             }
         return true;
     }
+//M
 int main()
     {
         vector<int> nums{5,5,5,10,20};
