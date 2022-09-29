@@ -62,6 +62,7 @@ class employee
     };
 
 /*
+
 Encapsulation : wrapping up of data into a single unit 
 it is the binding of data and the methods that operate on them together
 
