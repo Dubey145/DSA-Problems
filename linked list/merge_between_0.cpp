@@ -50,4 +50,40 @@ public:
         }
         return newHead;
     }
+    
 };
+ListNode* mergeNodes(ListNode* head) 
+    {
+     //one pass   
+        ListNode *temp = head->next;
+        ListNode *newHead = NULL;
+        ListNode *prev = newHead;
+        
+        int current_sum = 0;
+        
+        while(temp!=NULL)
+        {
+            if(temp->val == 0)
+            {
+                ListNode *newNode = new ListNode(current_sum);
+                if(newHead == NULL)
+                {
+                    newHead = newNode;
+                    prev = newHead;
+                }
+                else 
+                {
+                    prev->next = newNode;
+                    prev = newNode;
+                    prev->next = NULL;
+                }
+                current_sum = 0;
+            }
+            else 
+            {
+                current_sum += temp->val;
+            }
+            temp = temp->next;
+        }
+        return newHead;
+    }
