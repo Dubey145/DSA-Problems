@@ -3,7 +3,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
 /*
 The last node is connected to the first node
 Advantages
