@@ -48,11 +48,36 @@ class node
                         prev = current->left;
                         current->left = current->right;
                         current->right = prev;
+                        
                         //swapped right and left pointer, now to move forward use curr->left because pointers are swapped
+
                         current = current->left;
                     }
+                    //after the last iteration prev will be at the second last node
+                    //so we return prev->left
                 return prev->left;
 
+            }
+        node* delete_head(node* head)
+            {
+                if(head == NULL || head->right == NULL) 
+                    return NULL;
+                else 
+                {
+                    head = head->right;
+                    head->left = NULL;
+                    return head;
+                }
+            }
+        node* delete_last(node* head)
+            {
+                if(head == NULL || head->right == NULL) return NULL;
+
+                node* temp = head;
+                while(head->right->right!=NULL){ head = head->right; }
+                head->right = NULL;
+
+                return temp;
             }
         void print(node* head)
             {
@@ -82,6 +107,11 @@ int main()
         head = head->insert_begin(head,0);
 
         head = head->reverse(head);
+        head->print(head);
+
+        
+        head = head->delete_last(head);
+        cout<<endl;
         head->print(head);
         return 0;
     }
