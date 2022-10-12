@@ -3,6 +3,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+
 /*
 The last node is connected to the first node
 Advantages
@@ -43,7 +44,51 @@ class node
                         cout<<temp->data<<" ";
                         temp=temp->next;
                     }while(temp != head);
+                cout<<endl;
             }
+        node* insert_begin(node* head,int element)
+            {
+                //naive approach
+                node * newNode = new node(element);
+                if(head == NULL)
+                    {
+                        head = newNode;
+                        newNode->next = newNode;
+                        return head;
+                    }
+
+                node *temp = head->next;
+                while(temp->next!=head)
+                    {
+                        temp= temp->next;
+                    }
+                temp->next = newNode;
+                newNode->next = head;
+                head = newNode;
+                return head;
+            }
+        //for tricky questions in LL think about swapping or overwriting data
+        node * add_begin(node * head, int element)
+            {
+                node* newNode = new node(element);
+
+                if(head == NULL)
+                    {
+                        head = newNode;
+                        newNode->next = newNode;
+                    }
+                else 
+                    {
+                        //add the element as the 2nd node
+                        newNode->next = head->next;
+                        head->next = newNode;
+                        
+                        //swap data of second and first node
+                        swap(head->data,newNode->data);
+                    }
+                return head;
+            }
+            
     };
 
 int main()
@@ -60,5 +105,7 @@ int main()
         
         head->print(head);
 
+        head = head->add_begin(head,25);
+        head->print(head);
         return 0;
     }
