@@ -5,7 +5,16 @@
 #include<stack>
 using namespace std;
 
-//copy function signature
+/*
+push
+pop
+size
+empty
+top
+all stack operations work on O(n)
+*/
+
+
 
 int main()
     {
@@ -18,7 +27,14 @@ int main()
         cout<<s.top()<<endl;
         s.pop();
         cout<<s.top()<<endl;
+        
+        //printing all elements of the stack
 
+        while(s.empty() == false) // or while(!s.empty())
+            {
+                cout<<s.top()<<" ";
+                s.pop();
+            }
 
         return 0;
     }
