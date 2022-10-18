@@ -27,6 +27,5 @@ int main()
     {
         vector<int> nums{3,4,3,1,0};
         cout<<zero_sub(nums);
-
         return 0;
     }
