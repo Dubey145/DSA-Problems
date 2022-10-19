@@ -1,5 +1,4 @@
 //cycle in a linked list 
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -27,7 +26,6 @@ public:
         return false;
     }
 };
-
 //O(1) SC
 /**
  * Definition for singly-linked list.
@@ -37,6 +35,7 @@ public:
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
 class Solution {
 public:
     bool hasCycle(ListNode *head) 
