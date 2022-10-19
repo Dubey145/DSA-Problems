@@ -1,3 +1,4 @@
+
 /**
  //https://leetcode.com/problems/remove-nth-node-from-end-of-list/submissions/
  * Definition for singly-linked list.
@@ -9,6 +10,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) 
