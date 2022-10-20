@@ -9,7 +9,6 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) 
