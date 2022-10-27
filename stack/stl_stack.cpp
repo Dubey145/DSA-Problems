@@ -11,7 +11,7 @@ pop
 size
 empty
 top
-all stack operations work on O(n)
+all stack operations work on O(1)
 */
 
 
