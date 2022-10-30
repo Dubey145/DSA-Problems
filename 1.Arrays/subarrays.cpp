@@ -1,6 +1,7 @@
 //A subarray is a contiguous part of array.
 //for an array/string of size n, there are n*(n+1)/2 
 //non-empty subarrays/substrings.
+
 #include<iostream>
 using namespace std;
 
