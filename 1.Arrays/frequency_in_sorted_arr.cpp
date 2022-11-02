@@ -3,7 +3,6 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-
 void freq(vector<int> nums) 
     {
         int counter = 0;
@@ -23,7 +22,6 @@ void freq(vector<int> nums)
             }
         cout<<counter<<endl;
     }
-
 int main()
     {
         vector<int> nums{10,20,30};
