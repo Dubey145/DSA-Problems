@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/implement-queue-using-stacks/submissions/860731599/
+
 class MyQueue {
 public:
     //take the bottom of the stack as the rear 
