@@ -1,0 +1,30 @@
+https://leetcode.com/problems/keys-and-rooms/submissions/862468835/
+class Solution {
+public:
+    bool canVisitAllRooms(vector<vector<int>>& rooms) 
+    {
+        vector<bool> haveKeys(rooms.size(),false);
+        haveKeys[0] = true;
+        int trueCount = 1;
+
+        queue<int> q;
+        q.push(0);
+
+        while(!q.empty())
+            {
+                int currentRoom = q.front();
+                q.pop();
+
+                for(int i = 0; i<rooms[currentRoom].size();i++)
+                    {
+                        if(!haveKeys[rooms[currentRoom][i]])
+                            {
+                                q.push(rooms[currentRoom][i]);
+                                trueCount++;
+                                haveKeys[rooms[currentRoom][i]] = true;
+                            }
+                    }
+            }
+        return trueCount == haveKeys.size();
+    }
+};
