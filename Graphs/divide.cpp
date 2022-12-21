@@ -8,6 +8,7 @@ public:
         while (!q.empty()) {
             int node = q.front();
             q.pop();
+            
             for (auto& neighbor : adj[node]) {
                 if (color[neighbor] == color[node]) return false;
                 if (color[neighbor] == -1) {
