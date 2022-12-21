@@ -7,6 +7,7 @@ public:
 
         while (!q.empty()) {
             int node = q.front();
+            
             q.pop();
             
             for (auto& neighbor : adj[node]) {
