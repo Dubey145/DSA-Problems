@@ -6,6 +6,7 @@ using namespace std;
 int xorOperation(int n, int start) 
     {
         vector<int> xOr;
+    
         int current_xor=0;
         for(int i = 0; i < n; i++)
             {
