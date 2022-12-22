@@ -4,7 +4,6 @@ using namespace std;
 //merge sort is a divide an conquer algorithm 
 
 //print elements in sorted order from 2 sorted arrays 
-
 int main()
     {
         int array1[] = {10,15,20};
