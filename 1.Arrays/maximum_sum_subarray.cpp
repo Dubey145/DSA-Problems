@@ -2,6 +2,7 @@
 //solved using kadne's algorithm
 //keep tracking current sum if it becomes less than one discard it and start all over again
 
+
 #include<iostream>
 #include<vector>
 using namespace std;
