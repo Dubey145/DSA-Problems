@@ -1,5 +1,6 @@
 class Solution {
 public:
+    
     int maximum69Number (int num) {
         string number = to_string(num);
         for(int i = 0; i <number.size();i++)
