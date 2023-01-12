@@ -1,7 +1,6 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
-
 #include<unordered_set>
 using namespace std;
 bool zero_sub(vector<int> &nums)
