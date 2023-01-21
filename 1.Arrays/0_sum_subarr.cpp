@@ -4,7 +4,6 @@
 #include<unordered_set>
 using namespace std;
 bool zero_sub(vector<int> &nums)
-    
     {
         unordered_set<int> set;
         int prefix_sum = 0;
