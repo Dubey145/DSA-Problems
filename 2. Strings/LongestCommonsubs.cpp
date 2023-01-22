@@ -1,6 +1,4 @@
 //https://leetcode.com/problems/longest-common-prefix/submissions/857662683/
-
-
 public:
     string longestCommonPrefix(vector<string>& strs) 
     {
