@@ -19,6 +19,7 @@ bool zero_sub(vector<int> &nums)
             }
         return false;
     }
+
 int main()
     {
         vector<int> nums{3,4,3,1,0};
