@@ -6,7 +6,7 @@ using namespace std;
 
 /*
 oops concepts are used to represent real world objects
-a class is a user defined data types
+a class is a user defined data type
 they represent attributes of real world objects
 
 */
