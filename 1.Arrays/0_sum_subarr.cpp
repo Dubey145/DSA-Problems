@@ -24,3 +24,4 @@ int main()
         cout<<zero_sub(nums);
         return 0;
     }
+
