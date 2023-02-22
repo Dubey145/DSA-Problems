@@ -3,6 +3,7 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+
 // vector<int> get_pair(vector<int> &nums2,int sum,int start)
 //     {
 //         vector<int> temp;
