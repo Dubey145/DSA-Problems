@@ -5,6 +5,8 @@ Binary Trees
 all nodes have at most 2 children 
 or degree is atmost 2
 */
+
+
 class node
     {
         public :
