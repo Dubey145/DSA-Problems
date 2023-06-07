@@ -9,7 +9,7 @@ bool zero_sub(vector<int> &nums)
         int prefix_sum = 0;
         for(int i = 0 ; i < nums.size(); i++)
             {
-                prefix_sum += nums[i];
+                prefixsum += nums[i];
                 if(prefix_sum == 0)
                     return true;
                 if(set.find(prefix_sum) != set.end())
